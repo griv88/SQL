@@ -22,3 +22,7 @@ SELECT * FROM tshirts ORDER BY price  ASC;
 
 --Display the sum of all inventory
 SELECT SUM(price) FROM tshirts
+
+--Display only shirts size Large
+SELECT * FROM tshirts
+WHERE size = "L"
