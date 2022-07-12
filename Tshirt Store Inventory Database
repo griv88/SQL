@@ -1,0 +1,24 @@
+--Creat my tshirt store inventory database
+
+CREATE TABLE tshirts (id INTEGER PRIMARY KEY, brand TEXT, quantity INTEGER, price INTEGER, size INTEGER);
+INSERT into tshirts values(1, "Balenciaga", 4, 500, "M");
+INSERT into tshirts values(2, "Balenciaga",6, 500, "L");
+INSERT into tshirts values(3, "Balenciaga", 10, 750, "S");
+INSERT into tshirts values(4, "Givenchy", 2, 150, "M");
+INSERT into tshirts values(5, "Ralph Lauren", 1, 100, "M");
+INSERT into tshirts values(6, "Gucci", 12, 250, "L");
+INSERT into tshirts values(7, "Gucci", 12, 250, "M");
+INSERT into tshirts values(8, "LV", 20, 400, "L");
+INSERT into tshirts values(9, "LV", 25, 400, "XL");
+INSERT into tshirts values (10, "LV", 15, 400, "M");
+INSERT into tshirts values(11, "BOSS", 4, 75, "M");
+INSERT into tshirts values(12,"BOSS", 3, 75, "L");
+INSERT into tshirts values(13,"Burberry",10, 490, "L");
+INSERT into tshirts values(14,"Burberry",12, 490, "M");
+INSERT into tshirts values(15,"Burberry" ,6,500, "S");
+
+--Display the database ordered my price in ascending order
+SELECT * FROM tshirts ORDER BY price  ASC;
+
+--Display the sum of all inventory
+SELECT SUM(price) FROM tshirts
