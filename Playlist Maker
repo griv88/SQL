@@ -57,12 +57,12 @@ INSERT INTO songs (artist, title)
 INSERT INTO songs (artist, title)
     VALUES ("Guns N' Roses", "Don't cry");
 
--- All songs by artist named 'Queen'
+-- Display all songs by artist named 'Queen'
 SELECT title FROM songs WHERE artist ='Queen'
 
--- Selecting artists on 'Pop' Genre
+-- Display artists on 'Pop' Genre
 SELECT name FROM artists WHERE genre = 'Pop'
 
--- Selecting all pop artists using IN
+-- Display all pop artists using IN
 SELECT title FROM songs WHERE artist IN
 (SELECT name FROM artists WHERE genre = 'Pop');
