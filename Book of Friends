@@ -43,3 +43,18 @@ FROM persons p
 JOIN hobbies h
 
 ON p.id=h.person_id;
+
+-- Display SELECT with a JOIN to shown names of each pair of friends, based on data in the friends table
+
+SELECT a.fullname, b.fullname
+
+FROM friends
+
+JOIN persons a
+
+ON a.id = friends.person1_id
+
+JOIN persons b
+
+ON b.id = friends.person2_id;
+
